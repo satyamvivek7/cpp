@@ -2,17 +2,22 @@
 using namespace std;
 int main()
 {
-    int a,b,i=2,c=0;
-    cout<<"enter the range=";
-    cin>>a>>b;
-    while(a<=b)
+    int a,i=2,c=0;
+    cout<<"enter the no=";
+    cin>>a;
+    while(i<=a)
     {
         if(a%i==0)
         {
-          cout<<a<<"\t";
-        }
-        i++;
-        a++;
+          c++;
+          i++;
+          
+        } 
+        break;
     }
+    if(c==0)
+    cout<<"no is  prime";
+    else 
+    cout<<"no is not prime";
     return 0;
 }
